@@ -10,6 +10,6 @@ import es.ediae.master.programacion.gestionusuario.entity.GeneroEntity;
 public interface GeneroRepository extends JpaRepository<GeneroEntity, Integer> {
 
     @Query("SELECT g FROM GeneroEntity g WHERE g.nombre = :nombre")
-    GeneroEntity findByNombre(String nombre);
+    GeneroEntity buscarPorNombre(String nombre);
     
 }
